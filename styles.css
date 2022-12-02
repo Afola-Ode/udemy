@@ -1,122 +1,216 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
 *:focus {
-    outline: none;
+  outline: none;
 }
-.page__container{
-    max-width: 1280px;
-    margin: 0 auto;
+.page__container {
+  max-width: 1280px;
+  margin: 0 auto;
 }
-.header{ box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+.header {
+  box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
 }
-header{
-    display: flex;
-    width: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: space-between;
-   padding: 0.8rem 0;
-   position: relative;
+header {
+  display: flex;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 0;
+  position: relative;
 }
-header .logo__container{
-    cursor: pointer;
+header .logo__container {
+  cursor: pointer;
 }
-.search{
-    border: 1px solid #1c1d1f;
-    width: 37rem;
-    border-radius: 9999px;
-    background-color: #f7f9fa;
-    height: 3rem;
-    display: flex;
-    align-items: center;
-    padding: 0 1rem;
+.search {
+  border: 1px solid #1c1d1f;
+  width: 37rem;
+  border-radius: 9999px;
+  background-color: #f7f9fa;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
 }
-.search img{
-margin-right: 1.2rem;
+.search img {
+  margin-right: 1.2rem;
 }
-.search input{
-    border: none;
-    background-color: #f7f9fa;
+.search input {
+  border: none;
+  background-color: #f7f9fa;
 }
-.auth__btns{
-    display: flex;align-items: center;
+.auth__btns {
+  display: flex;
+  align-items: center;
 }
-header p{
-    font-size: 13px;
-    cursor: pointer;
+header p {
+  font-size: 13px;
+  cursor: pointer;
 }
 
-.auth__btns button, .udemy__biz__btn{
-padding: 0.5rem 1rem;
-border: 1px solid #1c1d1f;
-border-radius: none;
-font-weight: 600;
-height: 2.6rem;
-margin: 0 0.2rem;
-cursor: pointer;
+.auth__btns button,
+.udemy__biz__btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid #1c1d1f;
+  border-radius: none;
+  font-weight: 600;
+  height: 2.6rem;
+  margin: 0 0.2rem;
+  cursor: pointer;
 }
-.auth__btns button:first-child{
-    background: transparent;
+.auth__btns button:first-child {
+  background: transparent;
 }
-.auth__btns button:nth-child(2), .udemy__biz__btn{
-    background-color: black;
-    color: #fff;
+.auth__btns button:nth-child(2),
+.udemy__biz__btn {
+  background-color: black;
+  color: #fff;
 }
-.auth__btns button:last-child{
-    padding: 0.5rem;background-color: white;
+.auth__btns button:last-child,
+.course__preview__pane button {
+  padding: 0.5rem;
+  background-color: white;
 }
-.dropdown__one__content, .dropdown__two__content, .dropdown__three__content{
-    display: none;
-    position: absolute;
-    background: white;
-    width: 17rem;
-    top: 110%;
-    padding: 1rem;
-    box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+.dropdown__one__content,
+.dropdown__two__content,
+.dropdown__three__content {
+  display: none;
+  position: absolute;
+  background: white;
+  width: 17rem;
+  top: 110%;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
 }
-.dropdown__one__content span, .dropdown__two__content span, .dropdown__three__content span{
-display: flex;
-justify-content: space-between;
-align-items: center;
-margin-bottom: 1rem;
+.dropdown__one__content span,
+.dropdown__two__content span,
+.dropdown__three__content span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
 }
-.dropdown__one:hover .dropdown__one__content,.dropdown__two:hover .dropdown__two__content,.dropdown__three:hover .dropdown__three__content{
-    display: block;
-    }
-    .udemy__biz__btn{
-        margin-top: 0.5rem;
-        width: 100%;
-    }
-    .dropdown__two{
-        text-align: center;
-    }
-    .home__banner{
-        background-image: url("./images/lady.png");height: 70vh;
-        background-repeat: no-repeat;
-        background-size: cover;
-    width: 100%;
+.dropdown__one:hover .dropdown__one__content,
+.dropdown__two:hover .dropdown__two__content,
+.dropdown__three:hover .dropdown__three__content {
+  display: block;
+}
+.udemy__biz__btn {
+  margin-top: 0.5rem;
+  width: 100%;
+}
+.dropdown__two {
+  text-align: center;
+}
+.home__banner {
+  background-image: url("./images/lady.png");
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.home__banner div {
+  box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+  padding: 2.4rem;
+  width: 35%;
+  background: #fff;
+  margin-left: 6rem;
+}
+.home__banner h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.home__banner p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+.course__preview {
+  padding: 2rem 0;
+}
+.course__preview h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.course__preview .preview__entry {
+  font-size: 18px;
+}
+.course__tab {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.course__tab p {
+  font-weight: 600;
+  font-size: 16px;
+}
+.course__preview__pane {
+  border: 1px solid #d1d7dc;
+  padding: 3.2rem;
+  margin-top: 0.8rem;
+}
+.course__preview__desc p {
+  font-size: 14px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  width: 80%;
+  line-height: 1.5;
+}
+.course__preview__pane button {
+  border: 1px solid #000;
+  font-weight: 600;
+}
+.preview__cards {
+  padding: 2rem 0;
+}
+.card {
+  width: 19%;
+}
+.card h5 {
+  font-size: 15px;
+  margin-bottom: 0.3rem;
+}
+.tutor{
+  font-size: 12px;
+  margin-bottom: 0.3rem;
+  color: #6a6f73;
+}
+.card__img img {
+  border: 1px solid #d1d7dc;
+  width: 220px;
+}
+.card:not(:last-child) {
+  margin-right: 1rem;
+}
+.card__rating{
     display: flex;
-    align-items: center;
-    }
-    .home__banner div{
-        box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
-    padding: 2.4rem;
-    width: 30%;
-    background: #fff;
-    margin-left: 6rem;
-    }
-    .home__banner h1{
-font-size: 2rem;
-margin-bottom: 1rem;
-    }
-    .home__banner p{
-        font-size: 18px;
-        line-height: 1.5;
-    }
+}
+.rate{
+    color: #b4690e;
+    font-size: 13px;
+    font-weight: 700;
+    margin-right: 0.5rem;
+}
+.people{
+    margin-left: 0.5rem;
+    color: #6a6f73;
+    font-size: 13px;
+}
+.card__price p{
+   font-weight: 700;
+   font-size: 15px;
+   margin-top: 5px;
+}
+.preview__cards{
+    display: flex;
+}
