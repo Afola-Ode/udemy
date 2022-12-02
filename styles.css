@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+*:focus {
+    outline: none;
+}
+.page__container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.header{ box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+}
+header{
+    display: flex;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+   padding: 0.8rem 0;
+   position: relative;
+}
+header .logo__container{
+    cursor: pointer;
+}
+.search{
+    border: 1px solid #1c1d1f;
+    width: 37rem;
+    border-radius: 9999px;
+    background-color: #f7f9fa;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+}
+.search img{
+margin-right: 1.2rem;
+}
+.search input{
+    border: none;
+    background-color: #f7f9fa;
+}
+.auth__btns{
+    display: flex;align-items: center;
+}
+header p{
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.auth__btns button, .udemy__biz__btn{
+padding: 0.5rem 1rem;
+border: 1px solid #1c1d1f;
+border-radius: none;
+font-weight: 600;
+height: 2.6rem;
+margin: 0 0.2rem;
+cursor: pointer;
+}
+.auth__btns button:first-child{
+    background: transparent;
+}
+.auth__btns button:nth-child(2), .udemy__biz__btn{
+    background-color: black;
+    color: #fff;
+}
+.auth__btns button:last-child{
+    padding: 0.5rem;background-color: white;
+}
+.dropdown__one__content, .dropdown__two__content, .dropdown__three__content{
+    display: none;
+    position: absolute;
+    background: white;
+    width: 17rem;
+    top: 110%;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+}
+.dropdown__one__content span, .dropdown__two__content span, .dropdown__three__content span{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 1rem;
+}
+.dropdown__one:hover .dropdown__one__content,.dropdown__two:hover .dropdown__two__content,.dropdown__three:hover .dropdown__three__content{
+    display: block;
+    }
+    .udemy__biz__btn{
+        margin-top: 0.5rem;
+        width: 100%;
+    }
+    .dropdown__two{
+        text-align: center;
+    }
+    .home__banner{
+        background-image: url("/images/lady.png");height: 70vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    }
+    .home__banner div{
+        box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+    padding: 2.4rem;
+    width: 30%;
+    background: #fff;
+    margin-left: 6rem;
+    }
+    .home__banner h1{
+font-size: 2rem;
+margin-bottom: 1rem;
+    }
+    .home__banner p{
+        font-size: 18px;
+        line-height: 1.5;
+    }
